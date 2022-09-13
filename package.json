@@ -2,7 +2,7 @@
   "name": "react-navbar-cott",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://facucott.github.io/Quarantine-Entrega1-Cott",
+  "homepage": "https://facucott.github.io/Quarantine-Entrega1-Cott/",
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "@testing-library/jest-dom": "^5.16.5",

@@ -1,14 +1,15 @@
 // import Item from '../../components/Item/Item';
 import ItemCaracteristicas from '../Item/ItemCaracteristicas';
 
-const ItemDetail = ({data}) => {
+const ItemDetail = ({data, cargando}) => {
 
     return (
 
         <>
 
         {
-            
+            // cargando
+            // ?
             data.map (item => (
             <ItemCaracteristicas
                 key={item.id}
@@ -21,6 +22,8 @@ const ItemDetail = ({data}) => {
                 categoryId={item.categoryId}
                 />
             ))
+
+            // :<p>Cargando...</p>
         }
 
         </>

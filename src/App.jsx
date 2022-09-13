@@ -2,7 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import NavBar from './components/NavBar/NavBar';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-import valija from './assets/img/valija.png';
+import Inicio from './components/Inicio/Inicio';
+import NotFound from './components/NotFound/NotFound';
 
 function App (){
   return (
@@ -22,15 +23,14 @@ function App (){
           <br />
           <hr />
           </div>
-          {/* <div class="valija">
-            <img src = {valija} alt="set alt value" />
-          </div> */}
             {/* <ItemListContainer/> */}
             {/* <ItemDetailContainer/> */}
             <Routes>
+              <Route path='/' element = {<Inicio/>} />
               <Route path='/shop' element = {<ItemListContainer/>} />
               <Route path='/category/:idCategory' element = {<ItemListContainer/>} />
               <Route path='/item/:idItem' element = {<ItemDetailContainer/>} />
+              <Route path='*' element = {<NotFound/>} />
             </Routes>
         </div>
         </BrowserRouter>

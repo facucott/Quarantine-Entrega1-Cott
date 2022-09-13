@@ -12,7 +12,7 @@ const ItemCaracteristicas = ({id, img, title, description, price, stock}) => {
 
         
         <>
-
+        
         <div className="col-12">
 
         <div className="item-container contenedor">

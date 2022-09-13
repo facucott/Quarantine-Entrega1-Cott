@@ -26,7 +26,7 @@ function App (){
             {/* <ItemListContainer/> */}
             {/* <ItemDetailContainer/> */}
             <Routes>
-              <Route path='*' element = {<Inicio/>} />
+              <Route path='/' element = {<Inicio/>} />
               <Route path='/shop' element = {<ItemListContainer/>} />
               <Route path='/category/:idCategory' element = {<ItemListContainer/>} />
               <Route path='/item/:idItem' element = {<ItemDetailContainer/>} />
